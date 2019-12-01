@@ -5,11 +5,11 @@ body{
 	font-family: 微軟正黑體;
 }
 #Resume{
-	width: 80%;
+	width: 88%;
 	background: #282923;
 	position: absolute;
-	top: 20px;
-	left: 10%;
+	top: 40px;
+	left: 6%;
 }
 #AMTable{
 	padding:20px 50px;
@@ -49,4 +49,14 @@ body{
 }
 #aMyWeb:hover #MyWeb{
 	background: #406d74;
+	font-weight: bolder;
+}
+#Line{
+	background: lightgray;
+	height: 3px;
+	width: 70%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
