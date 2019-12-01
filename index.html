@@ -4,29 +4,112 @@
 		<title>Resume</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/MyResume.css">
+		<script type="text/javascript">
+			function progress(ID, percent) {
+				var user = ID;
+				var el = document.getElementById(user);
+				var width = 1;
+                var P = percent;
+				var id = setInterval(frame, 15);
+				function frame(){
+					if(width >=P){
+						clearInterval(id);
+					}
+					else{
+						width++;
+						el.style.width = width + '%';
+					}
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<article id="Resume">
 			<h1 id="MRTitle">- My Resume -</h1>
-			<table id="AMTable">
-				<tr>
-					<td>
-						<img id="Me" src="picture/photo/Me.png">
-					</td>
-					<td>
-						<h2 id="AMTitle">About Me</h2>
-						<p id="AMWord" class="Chinese">我叫劉彥鴻，目前就讀於中原大學資訊管理學系，<br>
-							同時也是一名業餘接案平面/動態攝影師。<br>
-							喜歡的東西是胖媽炒麵的綜合湯。<br>
-						平時休閒娛樂是聽白冰冰的來去高雄。</p>
-						<a href="https://www.facebook.com/MaGaiLiu" target="_blank"><img class="AMIcon" src="picture/icon/facebook.png"></a>
-						<a href="https://www.instagram.com/hugh208527/?hl=zh-tw" target="_blank"><img class="AMIcon" src="picture/icon/instagram.png"></a>
-						<a href="https://www.flickr.com/photos/136115082@N03/" target="_blank"><img class="AMIcon" src="picture/icon/flickr.png"></a>
-						<a id="aMyWeb" href="https://jerryliu208.github.io/mywebtest.github.io/" target="_blank"><font id="MyWeb" class="Chinese">個人網站</font></a>
-					</td>
-				</tr>
-			</table>
+			<section>
+				<table id="AMTable">
+					<tr>
+						<td>
+							<img id="Me" src="picture/photo/Me.png">
+						</td>
+						<td>
+							<h2 id="AMTitle">About Me</h2>
+							<p id="AMWord" class="Chinese">我叫劉彥鴻，目前就讀於中原大學資訊管理學系，<br>
+								同時也是一名業餘接案平面/動態攝影師。<br>
+								喜歡的東西是胖媽炒麵的綜合湯。<br>
+							平時休閒娛樂是聽白冰冰的來去高雄。</p>
+							<a href="https://www.facebook.com/MaGaiLiu" target="_blank"><img class="AMIcon" src="picture/icon/facebook.png"></a>
+							<a href="https://www.instagram.com/hugh208527/?hl=zh-tw" target="_blank"><img class="AMIcon" src="picture/icon/instagram.png"></a>
+							<a href="https://www.flickr.com/photos/136115082@N03/" target="_blank"><img class="AMIcon" src="picture/icon/flickr.png"></a>
+							<a id="aMyWeb" href="https://jerryliu208.github.io/mywebtest.github.io/" target="_blank"><font id="MyWeb" class="Chinese">個人網站</font></a>
+						</td>
+					</tr>
+				</table>
+			</section>
 			<div id="Line"></div>
+			
+			<div id="ADiv">
+				<table id="ATable">
+					<tr>
+						<td id="tdLeft" class="tdATable">
+							<h2 class="ArticleChinese">專業技能</h2>
+							<table id="SkillsTable">
+								<tr>
+									<td>
+										<img class="SkillsIcon" src="picture/icon/PS.png">
+									</td>
+									<td>
+										<p class="SkillsWord">Photoshop</p>
+										<div class="SkillBarContainer">
+											<div id="PSSkillBar"><font class="percent">80%</font></div>
+											<script type="text/javascript">
+												progress("PSSkillBar", 80);
+											</script>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img class="SkillsIcon" src="picture/icon/LR.png">
+									</td>
+									<td>
+										<p class="SkillsWord">Lightroom</p>
+										<div class="SkillBarContainer">
+											<div id="LRSkillBar"><font class="percent">95%</font></div>
+											<script type="text/javascript">
+												progress("LRSkillBar", 95);
+											</script>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img class="SkillsIcon" src="picture/icon/PR.png">
+									</td>
+									<td>
+										<p class="SkillsWord">Premiere</p>
+										<div class="SkillBarContainer">
+											<div id="PRSkillBar"><font class="percent">85%</font></div>
+											<script type="text/javascript">
+												progress("PRSkillBar", 85);
+											</script>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<h2 class="ArticleChinese">程式技能</h2>
+						</td>
+						<td id="tdMiddle" class="tdATable">
+							<div id="MiddleLine"></div>
+						</td>
+						<td id="tdRight" class="tdATable">
+							<h2 class="ArticleChinese">學歷</h2>
+							<h2 class="ArticleChinese">經歷</h2>
+						</td>
+					</tr>
+				</table>
+			</div>
 		</article>
+		
 	</body>
 </html>
