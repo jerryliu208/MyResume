@@ -89,7 +89,7 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
-#SkillsTable{
+#SkillsTable, #PGSkillsTable{
 	background: #2d2c4c;
 	padding: 10px 20px;
 	border-radius: 20px;
@@ -113,7 +113,16 @@ body{
 	position: relative;
 	top: -10px;
 }
-#PSSkillBar, #LRSkillBar, #PRSkillBar{
+.PGSkillBarContainer{
+    background: #717171;
+	width: 365px;
+	height: 20px;
+	padding:4px 3px 3px;
+	border-radius: 11px;
+	position: relative;
+	top: -10px;
+}
+#PSSkillBar, #LRSkillBar, #PRSkillBar, #CsSkillBar, #JavaSkillBar, #HCJSkillBar{
 	background: #7dd6e4;
 	width: 3%;
 	height: 18px;
