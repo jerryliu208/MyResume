@@ -9,7 +9,7 @@
 				var user = ID;
 				var el = document.getElementById(user);
 				var width = 1;
-                var P = percent;
+		var P = percent;
 				var id = setInterval(frame, 15);
 				function frame(){
 					if(width >=P){
@@ -36,8 +36,8 @@
 							<h2 id="AMTitle">About Me</h2>
 							<p id="AMWord" class="Chinese">我叫劉彥鴻，目前就讀於中原大學資訊管理學系，<br>
 								同時也是一名業餘接案平面/動態攝影師。<br>
-								喜歡的東西是胖媽炒麵的綜合湯。<br>
-							平時休閒娛樂是聽白冰冰的來去高雄。</p>
+								喜歡將腦袋的想法用特別的方式實際呈現出來，<br>
+							像是拍影片、寫程式、設計網頁等等...。</p>
 							<a href="https://www.facebook.com/MaGaiLiu" target="_blank"><img class="AMIcon" src="picture/icon/facebook.png"></a>
 							<a href="https://www.instagram.com/hugh208527/?hl=zh-tw" target="_blank"><img class="AMIcon" src="picture/icon/instagram.png"></a>
 							<a href="https://www.flickr.com/photos/136115082@N03/" target="_blank"><img class="AMIcon" src="picture/icon/flickr.png"></a>
@@ -47,112 +47,211 @@
 				</table>
 			</section>
 			<div id="Line"></div>
-			<div id="ADiv">
-				<table id="ATable">
-					<tr>
-						<td id="tdLeft" class="tdATable">
-							<h2 class="ArticleChinese">專業技能</h2>
-							<table id="SkillsTable">
-								<tr>
-									<td>
-										<img class="SkillsIcon" src="picture/icon/PS.png">
-									</td>
-									<td>
-										<p class="SkillsWord">Photoshop</p>
-										<div class="SkillBarContainer">
-											<div id="PSSkillBar"><font class="percent">80%</font></div>
-											<script type="text/javascript">
-												progress("PSSkillBar", 80);
-											</script>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img class="SkillsIcon" src="picture/icon/LR.png">
-									</td>
-									<td>
-										<p class="SkillsWord">Lightroom</p>
-										<div class="SkillBarContainer">
-											<div id="LRSkillBar"><font class="percent">95%</font></div>
-											<script type="text/javascript">
-												progress("LRSkillBar", 95);
-											</script>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img class="SkillsIcon" src="picture/icon/PR.png">
-									</td>
-									<td>
-										<p class="SkillsWord">Premiere</p>
-										<div class="SkillBarContainer">
-											<div id="PRSkillBar"><font class="percent">85%</font></div>
-											<script type="text/javascript">
-												progress("PRSkillBar", 85);
-											</script>
-										</div>
-									</td>
-								</tr>
-							</table>
-							<h2 class="ArticleChinese">程式技能</h2>
-							<table id="PGSkillsTable">
-								<tr>
-									<td>
-										<p class="SkillsWord">C#</p>
-										<div class="PGSkillBarContainer">
-											<div id="CsSkillBar"><font class="percent">80%</font></div>
-											<script type="text/javascript">
-												progress("CsSkillBar", 80);
-											</script>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p class="SkillsWord">Java</p>
-										<div class="PGSkillBarContainer">
-											<div id="JavaSkillBar"><font class="percent">65%</font></div>
-											<script type="text/javascript">
-												progress("JavaSkillBar", 65);
-											</script>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p class="SkillsWord">HTML/CSS/JS</p>
-										<div class="PGSkillBarContainer">
-											<div id="HCJSkillBar"><font class="percent">75%</font></div>
-											<script type="text/javascript">
-												progress("HCJSkillBar", 75);
-											</script>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p class="SkillsWord">Android</p>
-										<div class="PGSkillBarContainer">
-											<div id="AdSkillBar"><font class="percent">50%</font></div>
-											<script type="text/javascript">
-												progress("AdSkillBar", 50);
-											</script>
-										</div>
-									</td>
-								</tr>
-							</table>
-						</td>
-						<td id="tdMiddle" class="tdATable">
-							<div id="MiddleLine"></div>
-						</td>
-						<td id="tdRight" class="tdATable">
-							<h2 class="ArticleChinese">個人經歷</h2>
-						</td>
-					</tr>
-				</table>
-			</div>
+			<section>
+				<div id="ADiv">
+					<table id="ATable">
+						<tr>
+							<td id="tdLeft" class="tdATable">
+								<h2 class="ArticleChinese">專業技能</h2>
+								<table id="SkillsTable">
+									<tr>
+										<td>
+											<img class="SkillsIcon" src="picture/icon/PS.png">
+										</td>
+										<td>
+											<p class="SkillsWord">Photoshop</p>
+											<div class="SkillBarContainer">
+												<div id="PSSkillBar"><font class="percent">80%</font></div>
+												<script type="text/javascript">
+													progress("PSSkillBar", 80);
+												</script>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img class="SkillsIcon" src="picture/icon/LR.png">
+										</td>
+										<td>
+											<p class="SkillsWord">Lightroom</p>
+											<div class="SkillBarContainer">
+												<div id="LRSkillBar"><font class="percent">95%</font></div>
+												<script type="text/javascript">
+													progress("LRSkillBar", 95);
+												</script>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img class="SkillsIcon" src="picture/icon/PR.png">
+										</td>
+										<td>
+											<p class="SkillsWord">Premiere</p>
+											<div class="SkillBarContainer">
+												<div id="PRSkillBar"><font class="percent">85%</font></div>
+												<script type="text/javascript">
+													progress("PRSkillBar", 85);
+												</script>
+											</div>
+										</td>
+									</tr>
+								</table>
+								<h2 class="ArticleChinese">程式技能</h2>
+								<table id="PGSkillsTable">
+									<tr>
+										<td>
+											<p class="SkillsWord">C#</p>
+											<div class="PGSkillBarContainer">
+												<div id="CsSkillBar"><font class="percent">80%</font></div>
+												<script type="text/javascript">
+													progress("CsSkillBar", 80);
+												</script>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="SkillsWord">Java</p>
+											<div class="PGSkillBarContainer">
+												<div id="JavaSkillBar"><font class="percent">65%</font></div>
+												<script type="text/javascript">
+													progress("JavaSkillBar", 65);
+												</script>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="SkillsWord">HTML/CSS/JS</p>
+											<div class="PGSkillBarContainer">
+												<div id="HCJSkillBar"><font class="percent">75%</font></div>
+												<script type="text/javascript">
+													progress("HCJSkillBar", 75);
+												</script>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="SkillsWord">Android</p>
+											<div class="PGSkillBarContainer">
+												<div id="AdSkillBar"><font class="percent">50%</font></div>
+												<script type="text/javascript">
+													progress("AdSkillBar", 50);
+												</script>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td id="tdMiddle" class="tdATable">
+								<div id="MiddleLine"></div>
+							</td>
+							<td id="tdRight" class="tdATable">
+								<h2 class="ArticleChinese">課程專案</h2>
+								<div class="accordionMargin">
+									<button class="accordion">大一上|企業概論-行銷影片發想、拍攝</button>
+									<div class="panel">
+										<iframe class="CenIframe" width="100%" height="100%" src="https://www.youtube.com/embed/L-9OePVPODQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<p class="AccWord">與火車站前中平商圈和中壢長老教會合作，因應聖誕節節慶氣氛，為了讓來自外地的孩子們能感受到聖誕節所帶來的溫暖，因此布置中平商圈走訪全部商家，將溫暖帶給大家</p>
+									</div>
+								</div>
+								<div class="accordionMargin">
+									<button class="accordion">大一下|管理學-淨灘宣導影片拍攝</button>
+									<div class="panel">
+										<iframe class="CenIframe" width="100%" height="100%" src="https://www.youtube.com/embed/Al7aJg40Pic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<p class="AccWord">與中原校牧室合作，將所賣金額提供給撒瑪利亞愛心基金會，提供給校內學生或教師一份緊急救助金度過難關，秉持著救助的新，盼望能幫助同學們完成心中讀書的願望</p>
+									</div>
+								</div>
+								<div class="accordionMargin">
+									<button class="accordion">大二上|多媒體程式設計-行銷中原影片發想、拍攝</button>
+									<div class="panel">
+										<iframe class="CenIframe" width="100%" height="100%" src="https://www.youtube.com/embed/Mhm7kwcHoDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<p class="AccWord">大二上學期末與甲班合作項目，第一次製作購物網頁程式後端，結合資料庫，以販售烏克麗麗為主題，製作出許多後端功能，隨然當時滿頭問號，努力鑽研許久又沒得到東西，但透過此專案得到了成就感，感謝很罩的前端</p>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<script>
+						var acc = document.getElementsByClassName("accordion");
+						var i;
+						for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var panel = this.nextElementSibling;
+						if (panel.style.display === "block") {
+						panel.style.display = "none";
+						} else {
+						panel.style.display = "block";
+						}
+						});
+						}
+						</script>
+					</table>
+				</div>
+				<!--//////////////////////以下為作品集//////////////////////////-->
+				<div id="BDiv">
+					<h2 class="BDivTitle Chinese">個人作品集</h2>
+					<div class="line"></div>
+					<table class="talentTable">
+						<tr>
+							<td class="talentTabletd">
+								<div class="talentWordDiv">
+									<h3 class="Chinese talenth3">個人網頁製作</h3>
+									<p class="Chinese talentP">主要內容：前端HTML、CSS編寫以及版面設計應用。</p>
+								</div>
+							</td>
+							<td>
+								<a target="_blank" href="https://jerryliu208.github.io/mywebtest.github.io/">
+									<div class="talentRightDiv">
+										<img class="talentImg" src="picture/photo/MYWEB.jpg">
+										<h3 class="enterHint Chinese">點此進入</h3>
+									</div>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="talentTabletd">
+								<div class="talentWordDiv">
+									<h3 class="Chinese talenth3">旅遊短片拍攝</h3>
+									<p class="Chinese talentP">擅長攝影的我，趁著一次中國行，包辦拍攝以及剪輯，記錄下這趟旅程遇到的精采事物。</p>
+								</div>
+							</td>
+							<td>
+								<iframe width="80%" height="160%" class="telentIframe" src="https://www.youtube.com/embed/25h9Jp8goO0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</td>
+						</tr>
+						<tr>
+							<td class="talentTabletd">
+								<div class="talentWordDiv">
+									<h3 class="Chinese talenth3">活動前導劇情短片拍攝</h3>
+									<p class="Chinese talentP">為系上舉辦的密室逃脫拍攝了一支能夠將玩家帶入情緒的劇情短片，負責了前期分鏡腳本撰寫以及後期拍攝和剪輯調色。</p>
+								</div>
+							</td>
+							<td>
+								<iframe width="80%" height="160%" class="telentIframe" src="https://www.youtube.com/embed/rC7HmjbdXdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</td>
+						</tr>
+						<tr>
+							<td class="talentTabletd">
+								<div class="talentWordDiv">
+									<h3 class="Chinese talenth3">平面攝影作品集</h3>
+									<p class="Chinese talentP">比起動態影像，我更早接觸的其實是平面攝影，在這段玩攝影的期間累積了各式各樣的作品。</p>
+								</div>
+							</td>
+							<td>
+								<a target="_blank" href="https://www.flickr.com/photos/136115082@N03/">
+									<div class="talentRightDiv">
+										<img class="talentImg" src="picture/photo/MyFlickr.jpg">
+										<h3 class="enterHint Chinese">點此進入</h3>
+									</div>
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
 		</article>
 		<footer>
 			<p id="copyright">Copyright © 2019 By Vincent Liu<br>Tel:+886-927-285-095 | e-mail:jerryliu208@gmail.com</p>

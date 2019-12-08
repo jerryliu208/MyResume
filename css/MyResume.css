@@ -1,3 +1,7 @@
+html,body {
+    margin:0;
+    padding:0;
+}
 body{
     background: #6d6e69;
 }
@@ -75,7 +79,7 @@ body{
 #MiddleLine{
 	background: #565656;
 	width: 2px;
-	height: 750px;
+	height: 800px;
 	margin-bottom: 50px;
     margin-left: auto;
 	margin-right: auto;
@@ -95,11 +99,17 @@ body{
 	padding: 10px 20px;
 	border-radius: 20px;
 }
+#SkillsTable{
+	margin-bottom: 60px;
+}
 .tdATable{
 	vertical-align: top;
 }
-#tdLeft, #tdLeft{
-	width: 50%;
+#tdLeft, #tdRight{
+	width: 48%;
+}
+#tdMiddle{
+	padding-right: 10px;
 }
 .SkillsWord{
 	color: lightgray;
@@ -134,6 +144,104 @@ body{
 	color: #2d2c4c;
 	font-weight: bolder;
 	margin-right: 5px;
+}
+.accordion {
+  background-color: #2d2c4c;
+  color: white;
+  font-family: 微軟正黑體;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 2px gray solid;
+  border-radius: 15px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.accordionMargin{
+	margin-bottom: 100px;
+}
+.active, .accordion:hover {
+  background-color: #7fb3e2; 
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #282923;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: -100px;
+}
+.CenIframe{
+	display: block;
+	margin: 0px auto;
+}
+.AccWord{
+	font-family: 微軟正黑體;
+	color: lightgray;
+}
+#BDiv{
+	padding-bottom: 50px;
+}
+.BDivTitle{
+	text-align: center;
+	color: #a7cd42;
+}
+.line{
+	background: lightgray;
+	height: 3px;
+	width: 80%;
+	margin: 30px auto; 
+}
+.talentTable{
+	width: 90%;
+	margin: 0px auto;
+}
+.talentTabletd{
+	width: 50%;
+}
+.talentWordDiv{
+	margin: 0px 3% 0px 8%;
+	color: white;
+}
+.talenth3{
+	color: #f52860;
+}
+.talentP{
+	color: #7dd6e4; 
+}
+.talentImg{
+	display: block;
+    margin:10px auto;
+	width: 80%;
+    -webkit-filter:brightness(50%);
+}
+.telentIframe{
+	display: block;
+	margin: 10px auto;
+}
+.talentRightDiv{
+	position: relative;
+}
+.enterHint{
+	color: white;
+	font-weight: bold;
+	width: 50%;
+	position: absolute;
+	top: 40%;
+	left: 44%;
+	z-index: 3;
+	-webkit-filter:opacity(100%);
+}
+.talentRightDiv:hover .talentImg{
+    transition: 0.5s;
+    -webkit-filter:brightness(100%);
+}
+.talentRightDiv:hover .enterHint{
+    transition: 0.5s;
+    -webkit-filter:opacity(0%);
 }
 footer{
 	background: #282923;
