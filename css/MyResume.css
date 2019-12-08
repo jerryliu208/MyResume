@@ -109,7 +109,6 @@ body{
 	width: 48%;
 }
 #tdMiddle{
-	padding-right: 10px;
 }
 .SkillsWord{
 	color: lightgray;
@@ -242,6 +241,25 @@ body{
 .talentRightDiv:hover .enterHint{
     transition: 0.5s;
     -webkit-filter:opacity(0%);
+}
+.contact{
+	text-align: center;
+	color: #a7cd42;
+}
+.contactTable{
+	margin: 0px auto;
+}
+.EmailWord{
+	color: white;
+	margin: 0px 20px 0px 0px;
+}
+.mailIcon{
+	width: 100px;
+	display: block;
+	margin: 0px auto 0px 20px;
+}
+.EndSection{
+	padding-bottom: 30px;
 }
 footer{
 	background: #282923;
